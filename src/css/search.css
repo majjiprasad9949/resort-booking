@@ -1,0 +1,150 @@
+/* Search and Filter Section */
+
+.search-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.search-section h2 {
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.search-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.search-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-input-group label {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.search-input-group input,
+.search-input-group select {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  color: #333;
+}
+
+.search-input-group input:focus,
+.search-input-group select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+.filter-button-group {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.search-btn {
+  flex: 1;
+  padding: 12px 20px;
+  background-color: #ff6b00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #e65c00;
+}
+
+.reset-btn {
+  padding: 12px 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s;
+}
+
+.reset-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.filter-results {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.filter-results strong {
+  color: #ff6b00;
+  font-weight: 600;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+}
+
+.no-results h3 {
+  font-size: 22px;
+  color: #666;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.no-results p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .search-section {
+    padding: 25px 15px;
+    margin-bottom: 20px;
+  }
+
+  .search-section h2 {
+    font-size: 22px;
+  }
+
+  .search-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .filter-button-group {
+    flex-direction: column;
+  }
+
+  .search-btn,
+  .reset-btn {
+    width: 100%;
+  }
+}

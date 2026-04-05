@@ -11,10 +11,10 @@ const Navbar = () => {
         <li><a href="">Coupons&Deals</a></li>
         <li><a href="">ENQUIRY</a></li>
       </ul>
-      <span className="searching">
+      {/* <span className="searching">
         <input type="text" placeholder="Search destinations or resorts" />
         <button type="submit">Search</button>
-      </span>
+      </span> */}
       <button className='btn1'>Login</button>
     </div>
   )
